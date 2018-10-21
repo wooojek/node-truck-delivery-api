@@ -4,6 +4,7 @@ const router = new KoaRouter({
 });
 const delivery = require('../handlers/delivery');
 
-router.post('/', delivery);
+router.get('/history', delivery.getHistoryData);
+router.post('/', delivery.countDelivery);
 
 module.exports = router.middleware();

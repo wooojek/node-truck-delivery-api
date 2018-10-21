@@ -1,28 +1,40 @@
 {
-  "name": "truck-delivery-api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon --inspect -e js,json index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wooojek/node-truck-delivery-api.git"
-  },
-  "author": "Wooojek",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/wooojek/node-truck-delivery-api/issues"
-  },
-  "homepage": "https://github.com/wooojek/node-truck-delivery-api#readme",
-  "dependencies": {
-    "koa": "^2.5.3",
-    "koa-body": "^4.0.4",
-    "koa-mount": "^4.0.0",
-    "koa-router": "^7.4.0",
-    "koa-static": "^5.0.0",
-    "uuid": "^3.3.2"
-  }
+    "name": "truck-delivery-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./index.js",
+        "test": "mocha ./**/*.test.js",
+        "test-watch": "nodemon --exec 'npm run test'"
+    },
+    "engines": {
+        "node": "9.5.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wooojek/node-truck-delivery-api.git"
+    },
+    "author": "Wooojek",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/wooojek/node-truck-delivery-api/issues"
+    },
+    "homepage": "https://github.com/wooojek/node-truck-delivery-api#readme",
+    "dependencies": {
+        "koa": "^2.5.3",
+        "koa-body": "^4.0.4",
+        "koa-mount": "^4.0.0",
+        "koa-router": "^7.4.0",
+        "koa-static": "^5.0.0",
+        "mongodb": "^3.1.8",
+        "mongoose": "^5.3.4",
+        "uuid": "^3.3.2"
+    },
+    "devDependencies": {
+        "expect": "^23.6.0",
+        "mocha": "^5.2.0",
+        "nodemon": "^1.18.4",
+        "supertest": "^3.3.0"
+    }
 }
