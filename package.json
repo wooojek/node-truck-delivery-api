@@ -1,0 +1,19 @@
+{
+  "name": "truck-delivery-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wooojek/node-truck-delivery-api.git"
+  },
+  "author": "Wooojek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wooojek/node-truck-delivery-api/issues"
+  },
+  "homepage": "https://github.com/wooojek/node-truck-delivery-api#readme"
+}
