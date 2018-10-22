@@ -8,6 +8,14 @@
         "test": "mocha ./**/*.test.js --exit",
         "test-watch": "nodemon --exec 'npm run test'"
     },
+    "apidoc": {
+        "name": "truck-delivery-api",
+        "version": "0.1.0",
+        "description": "truck-delivery-api docs",
+        "apidoc": {
+            "title": "truck-delivery-api docs"
+        }
+    },
     "engines": {
         "node": "9.5.0"
     },

@@ -1,0 +1,1 @@
+define({  "name": "truck-delivery-api",  "version": "0.1.0",  "description": "truck-delivery-api docs",  "apidoc": "0.3.0",  "sampleUrl": false,  "defaultVersion": "0.0.0",  "generator": {    "name": "apidoc",    "time": "2018-10-22T08:11:06.363Z",    "url": "http://apidocjs.com",    "version": "0.17.6"  }});

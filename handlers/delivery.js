@@ -27,10 +27,14 @@ class Delivery {
 
         const info = new TruckInfo(response);
         await info.save().then((doc) => {
-            ctx.body = doc;
+            const { trucks, price, createdAt } = doc;
+            ctx.body = {
+                trucks,
+                price,
+                createdAt,
+            };
         }, (e) => {
-            ctx.status = 400;
-            ctx.body = e;
+            ctx.status = 500;
         });
     }
 
@@ -42,8 +46,7 @@ class Delivery {
                 ctx.status = 404;
             }
         }, (e) => {
-            ctx.status = 400;
-            ctx.body = e;
+            ctx.status = 500;
         });
     }
 }
