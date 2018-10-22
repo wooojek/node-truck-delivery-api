@@ -1,5 +1,5 @@
 # node-truck-delivery-api
-REST API for calucating least trucks needed to move packages and the cost of it
+API for calucating least trucks needed to move packages and the cost of it
 
 ## Docs
 Working to solve the problem with ghpages, documentation will be available at [DOCS](https://wooojek.github.io/node-truck-delivery-api)
