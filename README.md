@@ -5,7 +5,7 @@ REST API for calucating least trucks needed to move packages and the cost of it
 Working to solve the problem with ghpages, documentation will be available at [DOCS](https://wooojek.github.io/node-truck-delivery-api)
 
 ## deployed to heroku
-### example POST /history:
+### example POST /delivery:
 ```
 curl -X POST \
   https://floating-sea-78939.herokuapp.com/delivery \
