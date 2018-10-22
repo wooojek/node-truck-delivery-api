@@ -36,7 +36,11 @@ class Delivery {
 
     static async getHistoryData(ctx) {
         await TruckInfo.find({}).then((history) => {
-            ctx.body = history;
+            if (history.length > 0) {
+                ctx.body = history;
+            } else {
+                ctx.status = 404;
+            }
         }, (e) => {
             ctx.status = 400;
             ctx.body = e;

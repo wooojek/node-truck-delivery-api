@@ -21,7 +21,15 @@ describe('GET /delivery/history', () => {
             })
             .end(done);
     });
-    after((done) => {
+    
+    it('should return 404 Not Found if database is empty', (done) => {
+        request(app.listen())
+            .get('/delivery/history')
+            .expect(404)
+            .end(done);
+    });
+
+    afterEach((done) => {
         TruckInfo.deleteMany({}).then((() => done()));
     });
 });
